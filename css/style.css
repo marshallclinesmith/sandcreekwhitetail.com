@@ -271,6 +271,13 @@ a {
     overflow: hidden;
 }
 
+.deer-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
 .deer-image-placeholder {
     height: 250px;
     background: #2c5530;
