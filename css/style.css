@@ -27,7 +27,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 15px 40px;
     background: #1a1a1a;
     position: sticky;
     top: 0;
@@ -35,13 +35,12 @@ a {
 }
 
 .logo a {
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo {
-    height: 45px;
-    width: auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #c5a55a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-links {
