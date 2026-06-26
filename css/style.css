@@ -269,6 +269,13 @@ a {
     background: #f9f9f9;
     border: 1px solid #e0e0e0;
     overflow: hidden;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .deer-image {
@@ -276,16 +283,6 @@ a {
     height: 300px;
     object-fit: cover;
     display: block;
-}
-
-.deer-image-placeholder {
-    height: 250px;
-    background: #2c5530;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #cde6cf;
-    font-size: 1.1rem;
 }
 
 .deer-info {
@@ -302,6 +299,39 @@ a {
 .deer-info p {
     color: #555;
     font-size: 0.95rem;
+}
+
+/* Deer Detail Page */
+.deer-detail {
+    padding: 60px 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #2c5530;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #c5a55a;
+}
+
+.deer-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.deer-detail-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #e0e0e0;
 }
 
 /* Contact Page */
@@ -430,6 +460,10 @@ footer {
 
     .hero-logo {
         max-width: 280px;
+    }
+
+    .deer-detail-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-grid {
