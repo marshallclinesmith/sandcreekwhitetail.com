@@ -27,7 +27,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 10px 40px;
     background: #1a1a1a;
     position: sticky;
     top: 0;
@@ -35,12 +35,13 @@ a {
 }
 
 .logo a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #c5a55a;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 45px;
+    width: auto;
 }
 
 .nav-links {
@@ -77,53 +78,76 @@ a {
     transition: 0.3s;
 }
 
-/* Hero Section */
-.hero {
+/* Hero Slideshow */
+.hero-slideshow {
     position: relative;
-    height: 80vh;
-    min-height: 500px;
-    background: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    height: 85vh;
+    min-height: 550px;
+    overflow: hidden;
 }
 
-.hero-overlay {
+.slides {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
 }
 
-.hero-content {
-    position: relative;
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.hero-slideshow .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
-    color: #fff;
 }
 
-.hero-logo {
-    max-width: 400px;
-    width: 80%;
-    height: auto;
-    margin-bottom: 25px;
+.hero-slideshow .hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .hero-content h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-content .tagline {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 35px;
     color: #ddd;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Buttons */
@@ -451,15 +475,11 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .hero-content .tagline {
         font-size: 1rem;
-    }
-
-    .hero-logo {
-        max-width: 280px;
     }
 
     .deer-detail-grid {
