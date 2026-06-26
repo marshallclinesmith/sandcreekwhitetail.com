@@ -35,12 +35,13 @@ a {
 }
 
 .logo a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #c5a55a;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
 }
 
 .nav-links {
@@ -82,7 +83,7 @@ a {
     position: relative;
     height: 80vh;
     min-height: 500px;
-    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    background: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +103,13 @@ a {
     position: relative;
     z-index: 1;
     color: #fff;
+}
+
+.hero-logo {
+    max-width: 350px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .hero-content h1 {
@@ -412,6 +420,10 @@ footer {
 
     .hero-content .tagline {
         font-size: 1rem;
+    }
+
+    .hero-logo {
+        max-width: 250px;
     }
 
     .contact-grid {
