@@ -22,5 +22,5 @@ if (slides.length > 0) {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
 }
