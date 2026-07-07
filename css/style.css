@@ -220,7 +220,7 @@ a { text-decoration: none; color: inherit; }
 
 .about-layout {
     display: grid;
-    grid-template-columns: 1fr 320px 1fr;
+    grid-template-columns: 1fr 500px 1fr;
     gap: 40px;
     align-items: start;
 }
