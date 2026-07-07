@@ -382,7 +382,8 @@ footer { background: #1a1208; color: #888; padding: 60px 20px 30px; border-top: 
     .hero-logo { width: 220px; }
 
     .about-layout { grid-template-columns: 1fr; }
-    .about-img { height: 380px; object-position: center center; }
+    .about-img { height: 380px; object-position: top center; }
+    .about-img-2 { object-position: center center; }
     .deer-detail-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .footer-content { flex-direction: column; text-align: center; }
