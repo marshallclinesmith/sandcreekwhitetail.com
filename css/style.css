@@ -26,6 +26,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -39,12 +42,6 @@ a { text-decoration: none; color: inherit; }
     text-transform: uppercase;
     letter-spacing: 2px;
     white-space: nowrap;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 35px;
 }
 
 .nav-links a {
