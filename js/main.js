@@ -12,11 +12,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Hero Slideshow - auto-detects images named slide1.jpg, slide2.jpg, etc.
+// Hero Slideshow - auto-detects slide1.jpg, slide2.jpg, etc.
 const slideshowContainer = document.getElementById('slideshow');
 
 if (slideshowContainer) {
-    let slideCount = 0;
     let loadedSlides = [];
 
     function tryLoadSlide(num) {
@@ -33,7 +32,6 @@ if (slideshowContainer) {
         while (true) {
             const exists = await tryLoadSlide(num);
             if (!exists) break;
-
             const slide = document.createElement('div');
             slide.className = 'slide' + (num === 1 ? ' active' : '');
             slide.style.backgroundImage = "url('images/slideshow/slide" + num + ".jpg')";
@@ -42,7 +40,6 @@ if (slideshowContainer) {
             num++;
         }
 
-        // Start rotation if more than 1 slide
         if (loadedSlides.length > 1) {
             let current = 0;
             setInterval(() => {
