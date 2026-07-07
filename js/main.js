@@ -1,15 +1,13 @@
-// Mobile menu toggle
+// Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+if (hamburger) {
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+}
 
 document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
+    link.addEventListener('click', () => navLinks && navLinks.classList.remove('active'));
 });
 
 // Hero Slideshow - auto-detects slide1.jpg, slide2.jpg, etc.
