@@ -206,7 +206,7 @@ a { text-decoration: none; color: inherit; }
 .cta p { margin-bottom: 35px; font-size: 1rem; color: #999; }
 
 /* ── PAGE HEADER ── */
-.page-header { background: #1a1208; padding: 80px 20px; text-align: center; border-bottom: 2px solid #c5a55a; }
+.page-header { background: #1a1208; padding: 30px 20px; text-align: center; border-bottom: 2px solid #c5a55a; }
 
 .page-header h1 {
     font-family: 'Oswald', sans-serif;
@@ -221,7 +221,7 @@ a { text-decoration: none; color: inherit; }
 
 .about-layout {
     display: grid;
-    grid-template-columns: 280px 1fr 280px;
+    grid-template-columns: 420px 1fr 420px;
     gap: 0;
     align-items: stretch;
     width: 100%;
