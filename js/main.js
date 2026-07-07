@@ -1,4 +1,3 @@
-// Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -10,7 +9,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => navLinks && navLinks.classList.remove('active'));
 });
 
-// Hero Slideshow - auto-detects slide1.jpg, slide2.jpg, etc.
 const slideshowContainer = document.getElementById('slideshow');
 
 if (slideshowContainer) {
@@ -37,7 +35,6 @@ if (slideshowContainer) {
             loadedSlides.push(slide);
             num++;
         }
-
         if (loadedSlides.length > 1) {
             let current = 0;
             setInterval(() => {
