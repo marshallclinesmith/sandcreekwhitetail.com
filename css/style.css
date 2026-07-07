@@ -365,7 +365,7 @@ footer { background: #1a1208; color: #888; padding: 60px 20px 30px; border-top: 
 
     .nav-links {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 65px;
         left: 0;
         width: 100%;
@@ -373,8 +373,9 @@ footer { background: #1a1208; color: #888; padding: 60px 20px 30px; border-top: 
         flex-direction: column;
         padding: 20px 30px;
         gap: 15px;
-        z-index: 200;
+        z-index: 9999;
         border-bottom: 2px solid #c5a55a;
+        transform: none;
     }
 
     .nav-links.active { display: flex; }
