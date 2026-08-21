@@ -430,3 +430,7 @@ footer { background: #1a1208; color: #888; padding: 60px 20px 30px; border-top: 
 @media (max-width: 800px) { .resources-grid { grid-template-columns: 1fr; max-width: 520px; } .resource-logo-wrap { height: 145px; } }
 @media (max-width: 600px) { .faq-hero, .resources-intro { padding: 42px 0; } .faq-content, .resources-content { padding: 36px 0 50px; } .faq-item { grid-template-columns: 42px 1fr; gap: 15px; padding: 23px 20px; } .faq-number { width: 38px; height: 38px; } .faq-item h2 { font-size: 1.15rem; } }
 
+
+/* Supplied KEDA logo */
+.keda-logo-wrap { padding: 0; background: #0c4d09; }
+.keda-logo { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; object-position: center; }
