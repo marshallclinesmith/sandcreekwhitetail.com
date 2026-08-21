@@ -399,3 +399,34 @@ footer { background: #1a1208; color: #888; padding: 60px 20px 30px; border-top: 
 .resource-item:hover { background: #fbf8f1; }
 .resource-item span { display: inline-block; margin-top: 16px; color: #8d7032; font-family: 'Oswald', sans-serif; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
 
+/* Enhanced FAQ and resource pages */
+.eyebrow { margin: 0 0 10px; color: #c5a55a; font-family: 'Oswald', sans-serif; font-size: .82rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+.faq-hero, .resources-intro { background: #ece5da; padding: 54px 0 50px; text-align: center; }
+.faq-hero .container, .resources-intro .container { max-width: 780px; }
+.faq-hero h2, .resources-intro h2 { margin: 0 0 14px; color: #1a1208; font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.faq-hero p:not(.eyebrow), .resources-intro p:not(.eyebrow) { margin: 0; color: #625b51; line-height: 1.8; }
+.faq-content { padding: 52px 0 70px; }
+.faq-list { display: grid; gap: 14px; }
+.faq-item { display: grid; grid-template-columns: 56px 1fr; gap: 22px; align-items: start; margin: 0; padding: 28px 30px; border: 1px solid #e4ddd4; border-left: 4px solid #c5a55a; box-shadow: 0 4px 16px rgba(44, 31, 12, .05); transition: transform .2s ease, box-shadow .2s ease; }
+.faq-item:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(44, 31, 12, .10); }
+.faq-number { display: flex; width: 48px; height: 48px; align-items: center; justify-content: center; background: #1a1208; color: #c5a55a; font-family: 'Oswald', sans-serif; font-size: .9rem; font-weight: 700; letter-spacing: 1px; }
+.faq-item h2 { font-size: 1.32rem; line-height: 1.25; }
+.resources-content { padding: 54px 0 76px; }
+.resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1200px; }
+.resource-card { display: flex; flex-direction: column; background: #fff; overflow: hidden; text-decoration: none; border: 1px solid #e4ddd4; border-bottom: 4px solid #c5a55a; box-shadow: 0 4px 16px rgba(44, 31, 12, .06); transition: transform .25s ease, box-shadow .25s ease; }
+.resource-card:hover { transform: translateY(-6px); box-shadow: 0 14px 28px rgba(44, 31, 12, .15); }
+.resource-logo-wrap { display: flex; height: 160px; padding: 18px 25px; align-items: center; justify-content: center; background: #f8f5f0; border-bottom: 1px solid #e8e0d7; }
+.resource-logo { display: block; max-width: 100%; max-height: 118px; object-fit: contain; }
+.nadr-logo { max-height: 128px; }
+.keda-mark { flex-direction: column; gap: 7px; background: #243528; color: #fff; text-align: center; }
+.keda-mark span { color: #d2af57; font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 700; letter-spacing: 4px; line-height: 1; }
+.keda-mark small { max-width: 190px; font-family: 'Open Sans', sans-serif; font-size: .64rem; letter-spacing: 1.4px; line-height: 1.35; text-transform: uppercase; }
+.resource-card-body { display: flex; flex: 1; flex-direction: column; padding: 27px 27px 24px; }
+.resource-acronym { margin: 0 0 7px !important; color: #a5833e !important; font-family: 'Oswald', sans-serif; font-size: .78rem !important; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.resource-card h2 { font-size: 1.28rem; line-height: 1.22; }
+.resource-card-body > p:not(.resource-acronym) { font-size: .94rem; }
+.resource-card span { margin-top: auto; padding-top: 22px; }
+.resource-card span b { margin-left: 6px; font-size: 1.1rem; }
+@media (max-width: 800px) { .resources-grid { grid-template-columns: 1fr; max-width: 520px; } .resource-logo-wrap { height: 145px; } }
+@media (max-width: 600px) { .faq-hero, .resources-intro { padding: 42px 0; } .faq-content, .resources-content { padding: 36px 0 50px; } .faq-item { grid-template-columns: 42px 1fr; gap: 15px; padding: 23px 20px; } .faq-number { width: 38px; height: 38px; } .faq-item h2 { font-size: 1.15rem; } }
+
