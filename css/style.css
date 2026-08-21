@@ -434,3 +434,17 @@ footer { background: #1a1208; color: #888; padding: 60px 20px 30px; border-top: 
 /* Supplied KEDA logo */
 .keda-logo-wrap { padding: 0; background: #0c4d09; }
 .keda-logo { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; object-position: center; }
+
+
+/* Boxed resources layout — matches the FAQ cards */
+.resources-box-list { display: grid; gap: 16px; max-width: 900px; }
+.resource-box { display: grid; grid-template-columns: 185px 1fr; gap: 28px; align-items: center; background: #fff; padding: 22px 30px; border: 1px solid #e4ddd4; border-left: 4px solid #c5a55a; box-shadow: 0 4px 16px rgba(44, 31, 12, .05); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.resource-box:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(44, 31, 12, .10); }
+.resource-box-logo { display: flex; min-height: 105px; align-items: center; justify-content: center; padding: 10px; background: #f8f5f0; }
+.resource-box-logo img { display: block; width: 100%; max-height: 100px; object-fit: contain; }
+.keda-box-logo { padding: 0; background: #0a5109; overflow: hidden; }
+.keda-box-logo img { width: 100%; height: 105px; max-height: none; object-fit: cover; }
+.resource-box-copy h2 { margin: 0 0 10px; color: #1a1208; font-size: 1.32rem; line-height: 1.25; }
+.resource-box-copy > p:not(.resource-acronym) { margin: 0; color: #555; font-size: 1rem; line-height: 1.8; }
+.resource-box-copy span { display: inline-block; margin-top: 15px; color: #8d7032; font-family: 'Oswald', sans-serif; font-size: .9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+@media (max-width: 600px) { .resource-box { grid-template-columns: 1fr; gap: 18px; padding: 20px; } .resource-box-logo { min-height: 115px; } .keda-box-logo img { height: 115px; } }
