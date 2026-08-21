@@ -448,3 +448,6 @@ footer { background: #1a1208; color: #888; padding: 60px 20px 30px; border-top: 
 .resource-box-copy > p:not(.resource-acronym) { margin: 0; color: #555; font-size: 1rem; line-height: 1.8; }
 .resource-box-copy span { display: inline-block; margin-top: 15px; color: #8d7032; font-family: 'Oswald', sans-serif; font-size: .9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
 @media (max-width: 600px) { .resource-box { grid-template-columns: 1fr; gap: 18px; padding: 20px; } .resource-box-logo { min-height: 115px; } .keda-box-logo img { height: 115px; } }
+
+/* Simplified FAQ cards */
+.faq-item { display: block; }
